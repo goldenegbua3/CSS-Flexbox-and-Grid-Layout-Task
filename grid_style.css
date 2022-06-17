@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 36, 51);
+}
+
+header{
+    width: 100%;
+    background-color: rgb(17, 29, 48 );
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+header a{
+    color: white;
+    margin-left: 100px;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 250px auto;
+}
+
+section{
+    display: grid;
+    grid-template-areas:
+        "orangered1 orangered1 orange1"
+        "greenyellow1 blue1 blue1"
+        "greenyellow1 blue2 blue2";
+    gap: 10px;
+    padding: 10px;
+    
+    
+    grid-template-columns: 220px 150px 210px;
+    grid-template-rows: 180px 90px 120px;
+}
+
+section > div{
+    padding: 2em;
+}
+
+.section1{
+    background-color: orangered;
+    grid-area: orangered1;
+}
+
+.section2{
+    background-color: orange;
+    grid-area: orange1;
+}
+
+.section3{
+    background-color: greenyellow;
+    grid-area: greenyellow1;
+}
+
+.section4{
+    background-color: blue;
+    grid-area: blue1;
+}
+
+.section5{
+    background-color: blue;
+    grid-area: blue2;
+}
